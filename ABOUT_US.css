@@ -1,0 +1,129 @@
+ @font-face {
+     font-family: font1;
+     src: url('font/font1.ttf');
+ }
+
+
+
+ #shopnow {
+     text-align: center;
+     font-size: 2.1em;
+     font-family: font1;
+     color: #fff;
+     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+     margin-top: 2em;
+
+ }
+
+
+
+ hr {
+
+     border: none;
+     width: 90%;
+     border-bottom: 1px solid #fff;
+     box-shadow: 0 1.25em 1.25em -1.25em #333;
+     margin-top: -1em;
+
+ }
+
+ @media only screen and (max-width: 320px) {
+
+     .glow {
+         font-size: 2em;
+         font-weight: 900;
+         font-family: font1 !important;
+
+     }
+
+ }
+
+ body {
+     margin: 0;
+     font-family: cursive;
+ }
+
+ video {
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     min-width: 100%;
+     min-height: 100%;
+     width: auto;
+     height: auto;
+     z-index: -100;
+     transform: translateX(-50%) translateY(-50%);
+
+ }
+
+ #text_box {
+     font-weight: 100;
+     
+         text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+
+     color: white;
+     padding: 0;
+     width: 100%;
+     margin: auto;
+
+     font-size: 1.2rem;
+ }
+
+ h1 {
+     font-size: 3rem;
+     text-transform: uppercase;
+     margin-top: 0;
+     letter-spacing: .3rem;
+
+ }
+
+ @media screen and (max-width: 500px) {
+     div {
+         width: 70%;
+     }
+ }
+
+ h2 {
+     font-style: italic;
+     font-family: inherit;
+     font-size: 2rem;
+     margin-top: 0;
+     color: white;
+     letter-spacing: .1rem;
+ }
+
+
+ i {
+     text-shadow: 2px 2px 4px #000000;
+     color: white;
+     font-size: 3.5vh;
+ }
+
+ i.creative {
+     text-shadow: 0 0 3px #000, 0 0 5px #000;
+ }
+
+ .glow {
+
+     font-family: cursive;
+     font-weight: bolder;
+     font-size: 7vh;
+     font-weight: 500;
+     margin: auto;
+     color: #fff;
+     text-align: center;
+     -webkit-animation: glow 1s ease-in-out infinite alternate;
+     -moz-animation: glow 1s ease-in-out infinite alternate;
+     animation: glow 1s ease-in-out infinite alternate;
+ }
+
+ @-webkit-keyframes glow {
+     from {
+         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
+     }
+
+     to {
+         text-shadow: 0 0 20px #fff, 0 0 30px #4e4e4e, 0 0 40px #4e4e4e, 0 0 50px #4e4e4e, 0 0 60px #4e4e4e, 0 0 70px #4e4e4e, 0 0 80px #4e4e4e;
+     }
+ }

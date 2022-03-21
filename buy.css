@@ -1,0 +1,39 @@
+ @font-face {
+     font-family: font1;
+     src: url('font1.ttf');
+ }
+
+
+@media only screen and (max-width: 320px) {
+
+   .glow1 { 
+      font-size: 2em; 
+       font-weight: 900;
+       font-family: font1 !important;
+       color: white;
+       text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+   }
+
+}
+
+body {
+    margin: 0;
+    
+}
+
+
+
+#text_box{
+  font-weight:100; 
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 0;
+  width: auto;
+  margin:0;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
+

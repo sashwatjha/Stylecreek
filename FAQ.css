@@ -1,0 +1,87 @@
+ @font-face {
+     font-family: font1;
+     src: url('font1.ttf');
+ }
+
+
+@media only screen and (max-width: 320px) {
+
+   .glow1 { 
+      font-size: 2em; 
+       font-weight: 900;
+       font-family: font1 !important;
+       color: white;
+       text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+   }
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    
+    }
+
+.accordion a{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 400;
+   
+    text-decoration: none !important;
+}
+.accordion a.active{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    text-shadow: 2px 2px 2px #000;
+    
+}
+.accordion a:hover, .accordion a:hover::after{
+    cursor: pointer;color: #fff;
+    text-shadow: 2px 2px 2px #000;
+}
+.accordion a::after{
+    font-family: "Font Awesome 5 Free";
+    content: '\f358';
+    position: absolute;
+    float: right;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+  
+}
+.accordion a.active::after{
+    font-family: "Font Awesome 5 Free";
+    content: '\f35B';
+    color: #fff;
+    
+}
+.accordian .content p{
+    font-size: 1rem;
+    font-weight: 100;
+}
+.accordion .content{
+    opacity: 0;max-height: 0;
+    padding: 0 1rem;
+    
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.accordion .content.active{
+    opacity: 1; max-height: 100%;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+
+
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
+
